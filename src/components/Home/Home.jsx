@@ -13,6 +13,7 @@ const Home = () => {
   console.log(uniqueCategories);
   return (
     <>
+    Hello
     <Navbar/>
     <Landing/>
     <Offers offersData={offersData} />
