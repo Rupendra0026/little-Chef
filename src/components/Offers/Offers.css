@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: #FFD230;
+}
+
+.offers-carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    width: 50%;
+    padding: 20px;
+}
+.offers-carousel::-webkit-scrollbar {
+    display: none; /* Set the width of the scrollbar */
+}
+.offers-card {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-bottom: solid 5px #ccc;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1050px) {
+    .offers-carousel {  
+        padding: 10px;
+        width: 80%;
+       }
+}
+
+@media screen and (max-width:720px) {
+    .offers-carousel {  
+     padding: 10px;
+     width: 90%;
+    }
+    .main{
+        margin: 20px;
+    }
+    .offers-card{
+        padding: 5px;
+        line-height: 35px;
+    }
+}
