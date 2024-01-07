@@ -13,12 +13,11 @@ const Home = () => {
   console.log(uniqueCategories);
   return (
     <>
-    Hello
     <Navbar/>
     <Landing/>
     <Offers offersData={offersData} />
     <SpecialOffers SpecialOffersArray={SpecialOffersArray} title={"Special Deals"}/>
-    <Menu uniqueCategories={uniqueCategories} foodItems={foodItems}/>
+    {/* <Menu uniqueCategories={uniqueCategories} foodItems={foodItems}/> */}
     </>
   )
 }
