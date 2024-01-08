@@ -1,22 +1,29 @@
-import React from 'react'
+import React from "react";
+import './Menu.css'
 
 const Menu = (props) => {
-    const {uniqueCategories,foodItems}=props
+  const { uniqueCategoriesWithImg } = props;
+
   return (
     <>
-    <h1>Whats on your Mind?</h1>
-    {
-        uniqueCategories.map((data)=>{
-            return(
-                <>
-                <p>{data}</p>
-                </>
-            )
-        })
-    }
+      
+      <div className="menu-corousel">
+        <h1>Whats on your Mind?</h1>
+      <div className="mainn">
+      {uniqueCategoriesWithImg.map((data) => {
+        return (
+          <>
+          <div className="scrollmenu" key={data.name}>
+              <img src={data.imgs} width="100px" alt="img not found" />
+              <p>{data.category}</p>
+            </div>
+          </>
+        );
+      })}
+      </div>
+      </div>
     </>
+  );
+};
 
-  )
-}
-
-export default Menu
+export default Menu;
