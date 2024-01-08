@@ -82,6 +82,9 @@
 }
 
 @media screen and (max-width:580px) {
+    .menu-corousel{
+        margin: 20px;
+    }
     .mainn{
         width: 100%;
     }

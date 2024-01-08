@@ -59,7 +59,7 @@ export const foodItems = [
   { name: 'Item47', price: 680, category: 'cakes', type: 'veg' ,img:cakes},
   { name: 'Item48', price: 440, category: 'pizzas', type: 'non veg',img:pizza },
   { name: 'Item49', price: 760, category: 'icecreams', type: 'veg' ,img:icecreams},
-  { name: 'Item50', price: 590, category: 'biriyani', type: 'non veg',img:biriyani },
+  { name: 'Item50', price: 590, category: 'biriyani', type: 'non veg',img:biriyani }
 ];
 
 // export const uniqueCategories = [...new Set(foodItems.map(item => item.category))];
