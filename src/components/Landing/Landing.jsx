@@ -1,6 +1,7 @@
 import React from 'react'
 import './Landing.css'
 import Landingimage from '../../Images/Landingimage.jpg'
+
 const Landing = () => {
   return (
     <>
