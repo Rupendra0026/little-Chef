@@ -13,6 +13,7 @@ const Home = () => {
   console.log(foodItems);
   return (
     <>
+
     <Navbar/>
     <Landing/>
     <Offers offersData={offersData} />
