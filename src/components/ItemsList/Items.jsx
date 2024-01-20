@@ -27,7 +27,7 @@ const Items = () => {
     }
     </div>
     <div className='loadbtn'>
-        <button onClick={updatenum}>Load More</button>
+        <button onClick={updatenum}>Load More..</button>
     </div>
     </>
   )

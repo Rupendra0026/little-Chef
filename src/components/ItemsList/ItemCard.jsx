@@ -1,13 +1,13 @@
 import React from 'react'
 import './ItemCard.css'
-import { Zoom } from 'react-reveal';
+// import { Zoom } from 'react-reveal';
 const ItemCard = (props) => {
     const {data}=props;
     
   return (
     <>
     {/* <h1>{data.name}</h1> */}
-    <Zoom>
+    {/* <Zoom> */}
     <div className="itemcard">
         <div className="topline">
             <h4>{data.name}</h4>
@@ -23,7 +23,7 @@ const ItemCard = (props) => {
         <button>Add Cart</button>
         </div>
     </div>
-    </Zoom>
+    {/* </Zoom> */}
     </>
     
   )
