@@ -1,5 +1,5 @@
 import "./Offers.css";
-import { Bounce } from "react-reveal";;
+import { Bounce } from "react-reveal";
 
 
 const Offers = (props) => {
@@ -7,7 +7,7 @@ const Offers = (props) => {
   return (
     <>
       <div className="main">
-        <Bounce left delay="2000" >
+        <Bounce left >
         <div className="offers-carousel">
           {offersData.map((offer) => {
             return (
