@@ -1,14 +1,16 @@
 import React from 'react'
 import './ItemCard.css'
 import { Fade, Zoom } from 'react-awesome-reveal';
+
 const ItemCard = (props) => {
     const {data}=props;
     
   return (
     <>
     {/* <h1>{data.name}</h1> */}
-    <Fade>
-    <div className="itemcard">
+    <Fade duration={1000}>
+        <Zoom direction='left' >
+        <div className="itemcard">
         <div className="topline">
             <h4>{data.name}</h4>
             <div className={data.type=="veg"?"veg":"nveg"}>
@@ -23,6 +25,7 @@ const ItemCard = (props) => {
         <button>Add Cart</button>
         </div>
     </div>
+        </Zoom>
     </Fade>
     </>
     

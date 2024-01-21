@@ -7,13 +7,17 @@ const Landing = () => {
   return (
     <>
     <div className="landing">
-    <Slide cascade>
+   
         <div className="landing-heading">
+        <Slide cascade direction={"right"}>
           <h1>The Funday Bite</h1>
-           <p>Delicous Food For Every Mood</p>
+          </Slide>
+          <Slide cascade direction={"left"}>
+          <p>Delicous Food For Every Mood</p>
+          </Slide>
         </div>
-        </Slide>
-        <Fade cascade>
+        
+        <Fade direction='top'>
         <div className="landing-image">
             <img src={Landingimage} alt="" />
         </div>

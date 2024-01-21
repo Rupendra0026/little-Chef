@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { foodItems } from '../DataSets/ItemsList'
 import ItemCard from './ItemCard'
 import './Items.css'
+import { motion } from 'framer-motion'
 
 const Items = () => {
     const mainFooditems=foodItems;
@@ -26,9 +27,14 @@ const Items = () => {
         })
     }
     </div>
-    <div className='loadbtn'>
-        <button onClick={updatenum}>Load More..</button>
-    </div>
+    <motion.div
+     className='loadbtn'>
+        <motion.button 
+        whileHover={{
+            scale:1.05
+        }}
+        onClick={updatenum}>Load More..</motion.button>
+    </motion.div>
     </>
   )
 }
